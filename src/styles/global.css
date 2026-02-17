@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    font-family:
+    "Montserrat Variable",
+    -apple-system,
+    system-ui,
+    sans-serif;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+  }
+}
