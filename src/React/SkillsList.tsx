@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CategoryIcons = {
-  "Web Development": (
+  "Web and mobile Development": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -11,7 +11,7 @@ const CategoryIcons = {
       <path d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"></path>
     </svg>
   ),
-  "Mobile Development": (
+  "Software Development": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -37,14 +37,19 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Web Development": [
+    "Web and mobile Development": [
       "Single Page Applications (SPAs)",
-      "Landing pages and business websites",
-      "Portfolio websites",
-    ],
-    "Mobile Development": [
+      "Landing pages and business e-commerce websites",
+      "Advanced CMS Wordpress and Shopify",
       "Mobile-friendly web apps",
       "React Native mobile apps",
+      "Flutter multiplatform apps",
+    ],
+    "Software Development;Database and DevOps": [
+      ".NetCore administrative and reporting software",
+      "ASP, Razor and MVC architecture",
+      "Microsoft sql server, PostgreSQL, Microsoft reporting services",
+      "Azure DevOps",
     ],
     "UI/UX Design & Prototyping": [
       "UI design with Figma & Canva",
@@ -81,9 +86,8 @@ const SkillsList = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className={`w-6 h-6 text-[#b3b3b3] transform transition-transform flex-shrink-0 ${
-                      openItem === category ? "rotate-180" : ""
-                    }`}
+                    className={`w-6 h-6 text-[#b3b3b3] transform transition-transform flex-shrink-0 ${openItem === category ? "rotate-180" : ""
+                      }`}
                   >
                     <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
                   </svg>
@@ -91,11 +95,10 @@ const SkillsList = () => {
               </div>
 
               <div
-                className={`transition-all duration-300 px-4 ${
-                  openItem === category
-                    ? "max-h-[500px] pb-4 opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
+                className={`transition-all duration-300 px-4 ${openItem === category
+                  ? "max-h-[500px] pb-4 opacity-100"
+                  : "max-h-0 opacity-0"
+                  }`}
               >
                 <ul className="space-y-2 text-[#b3b3b3] text-sm">
                   {items.map((item, index) => (
