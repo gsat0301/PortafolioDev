@@ -15,10 +15,10 @@ const CategoryIcons = {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       className="w-6 h-6 text-white opacity-70"
     >
-      <path d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"></path>
+      <path d="M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H17.8C18.9201 5 19.4802 5 19.908 5.21799C20.2843 5.40973 20.5903 5.71569 20.782 6.09202C21 6.51984 21 7.07989 21 8.2V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.07989 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2Z" stroke="#b3b3b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 9L7 12L10 15M14 9L17 12L14 15" stroke="#b3b3b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   ),
   "UI/UX Design & Prototyping": (
@@ -44,11 +44,12 @@ const SkillsList = () => {
       "Mobile-friendly web apps",
       "React Native mobile apps",
       "Flutter multiplatform apps",
+      "Microsoft sql server, PostgreSQL",
     ],
-    "Software Development;Database and DevOps": [
+    "Software Development": [
       ".NetCore administrative and reporting software",
       "ASP, Razor and MVC architecture",
-      "Microsoft sql server, PostgreSQL, Microsoft reporting services",
+      " Microsoft reporting services",
       "Azure DevOps",
     ],
     "UI/UX Design & Prototyping": [
