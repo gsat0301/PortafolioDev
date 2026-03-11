@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import uned from "../assets/uned-v2.png";
 import daroma from "../assets/daroma-v2.png";
 import tastepuravida from "../assets/tastepuravida-v2.png";
-
+import llamame from "../assets/llamame-v2.png";
 
 interface Project {
   title: string;
@@ -31,11 +31,17 @@ const projects: Project[] = [
   {
     title: "Universidad Estatal a Distancia, Costa Rica",
     image: uned,
-    link: "www.linkedin.com/in/gabriel-spinozzi",
-    preview: "www.linkedin.com/in/gabriel-spinozzi",
+    link: "https://unedcr.com/",
+    preview: "https://unedcr.com/",
     status: "Deployed on private VPS",
   },
-  
+  {
+    title: "LlamaMe.app Professional services",
+    image: llamame,
+    link: "https://llamame.app/",
+    preview: "https://llamame.app/",
+    status: "Deployed on cloudflare pages",
+  },
 ];
 ---
 
@@ -47,7 +53,7 @@ const projects: Project[] = [
     <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
     <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       {
         projects.map((project) => (
           <div class="group">
@@ -67,9 +73,7 @@ const projects: Project[] = [
               <div class="flex items-center px-3">
                 <div class="flex-grow">
                   <h4 class="text-2xl font-semibold">{project.title}</h4>
-                  <span class="py-1 text-sm ">
-                    {project.status}
-                  </span>
+                  <span class="py-1 text-sm ">{project.status}</span>
                 </div>
                 <div class="flex gap-2 ml-auto">
                   <a
@@ -109,6 +113,5 @@ const projects: Project[] = [
         ))
       }
     </div>
-   
   </div>
 </section>
